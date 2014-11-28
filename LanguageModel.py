@@ -369,8 +369,8 @@ class LanguageModel(object):
             # Read the file line by line
             for line in fin:
                                        
-                word = line
-                
+                word = line.strip()
+               
                 
                 # Stem the word if enabled
                 if(self.enableStemming == "true"):
